@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Dark Mode Styling */
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+/* Container */
+.container {
+    background: #1e1e1e;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background: #333;
+    color: #f1f1f1;
+    transition: border 0.3s;
+}
+
+#todo-input:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+/* Add Task Button */
+#add-task-btn {
+    padding: 12px 20px;
+    background: #00bcd4;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#add-task-btn:hover {
+    background: #008ba3;
+}
+
+/* To-Do List Items */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #2a2a2a;
+    color: #f1f1f1;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover & Active Effects */
+ul li:hover {
+    background: #383838;
+    transform: translateY(-2px);
+}
+
+/* Checkbox Style */
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Delete Button */
+ul li button {
+    background: #ff5252;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+ul li button:hover {
+    background: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    #add-task-btn {
+        padding: 10px 15px;
+    }
+} 
